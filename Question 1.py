@@ -2,15 +2,17 @@
 #existing list and based on the length of the list and a random integer,
 #if the value pulled matches the current state of the list, it will
 #write out that specific entry into a new list then repeat until all previous entries are written into the new list.
-import random
-def array(x):
-    for i in range(0,len(x)):
-        value = random.randint(0,i)
-        x[value],x[i] = x[i],x[value]
-    return(x)
-#The list to be used
-myArray = [5,3,8,6,1,9,2,7]
 
+import random
+
+def shuffle(x):
+      for i in range(0,len(x)):
+            value = random.randint(0,i)
+            x[value],x[i] = x[i],x[value]
+      return(x)
+
+
+array = [1,2,3,4,5,6]
 
 #Does my algorithm have defined Inputs and Outputs?
  #Yes, the Inputs are myArray and outputs are the returned x
