@@ -11,8 +11,8 @@ def zeroes(x):
 
             if factorial % 5 != 0:
                 #every time 5 can be divided to give no remainder, a zero is added. the number passed is ran through the conditionals again.
-                break
+                  break
             else:
-                               factorial = factorial / 5
-               zeroes = zeroes + 1
+                  factorial = factorial / 5
+                  zeroes = zeroes + 1
     return zeroes
