@@ -4,14 +4,15 @@ def zeroes(x):
     #the following code is performed as many times as the value of the factorial number in increments of one
     for factorial in range(1,factorial+1):          
         
-        #checks if the value entered is above or equal to 0
+        #run the function as long as a number exists
         while factorial >  0:
-            #Check the number to see if it is divisible by 5
+            
+            #if the number can no longer be divided whole by 5, break the function, otherwise add 1 to zeroes and divide factorial number by 5, then run whilst it still meets the while loop.
+
             if factorial % 5 != 0:
                 #every time 5 can be divided to give no remainder, a zero is added. the number passed is ran through the conditionals again.
                 break
             else:
-                #Used to break out of the if statement or the function would never print
-               factorial = factorial / 5
+                               factorial = factorial / 5
                zeroes = zeroes + 1
     return zeroes
